@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    height: 50px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    /* color: #2596be; */
+    /* color: #111; */
+    font-weight: 500;
+}
+
+header .navigation li a:hover {
+    color: #ff9000;
+    /* color: #2596be; */
+    /* color: #029f1d; */
+    transition: 0.5s;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header.sticky .navigation li a:hover {
+    color: #029f1d;
+    transition: 0.5s;
+    /* color: #2596be; */
+    /* #029f1d */
+}
+
+/* contact */
+#contact {
+    padding: 50px 0;
+    background-color: #efefef;
+}
+
+.form-control {
+    border: none !important;
+}
+
+.info-box {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info-box .fa-solid,
+.info-box .fa-brands {
+    color: #ff9000;
+    margin: 3px;
+    cursor: pointer;
+}
+
+#contact {
+    /* margin-top: 2px; */
+    padding-top: 150px;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.copyright {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    /* padding: 10px; */
+    text-align: center;
+    background-color: #111;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #2596be;
+    font-weight: 600;
+}   
